@@ -1,6 +1,6 @@
 <div class="row container mx-auto">
     <div class="col">
-        <app-character-list [characterList]="characters"></app-character-list>
+        <app-character-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></app-character-list>
     </div>
     <div class="col">
         <app-add-character (onNewCharacter)="onNewCharacter($event)"></app-add-character>
